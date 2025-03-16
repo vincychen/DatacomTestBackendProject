@@ -16,13 +16,13 @@ This project is a RESTful API for managing job applications using ASP.NET Core a
 1. **Clone the repository:**
 
    ```
-   git clone <repository-url>
+   git clone https://github.com/vincychen/DatacomTestBackendProject.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd DatacomTestProject
+   cd DatacomTestBackendProject
    ```
 
 3. Restore the dependencies:
