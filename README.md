@@ -50,7 +50,7 @@ This project is a RESTful API for managing job applications using ASP.NET Core a
 2. Navigate to the project directory:
 
    ```sh
-   cd datacom-front-end-project
+   cd datacom-test-front-end-project
    ```
 
 3. Install the dependencies:
