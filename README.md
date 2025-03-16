@@ -11,43 +11,61 @@ This project is a RESTful API for managing job applications using ASP.NET Core a
 - **Program.cs**: The entry point of the application.
 - **Startup.cs**: Configures services and the request pipeline.
 
-## Endpoints
-
-- **GET /applications**: Retrieve all job applications.
-- **GET /applications/{id}**: Retrieve a specific job application by ID.
-- **POST /applications**: Add a new job application.
-
 ## Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
+
    ```
    git clone <repository-url>
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd DatacomTestProject
    ```
 
 3. Restore the dependencies:
+
    ```
    dotnet restore
    ```
 
 4. Run the application:
+
    ```
    dotnet run
    ```
 
-5. Access the Swagger UI for API documentation at `http://localhost:5000/swagger`.
+5. Access the Swagger UI for API documentation at `http://localhost:5000/swagger`
 
-## Technologies Used
+## Frontend Instructiion
 
-- ASP.NET Core
-- Entity Framework Core
-- SQLite (or In-Memory Database)
-- Swagger for API documentation
+1. Clone the repository:
 
-## Contributing
+   ```sh
+   git clone https://github.com/vincychen/datacom-test-front-end-project.git
+   ```
 
-Feel free to submit issues or pull requests for improvements or bug fixes.
+2. Navigate to the project directory:
+
+   ```sh
+   cd datacom-front-end-project
+   ```
+
+3. Install the dependencies:
+
+   ```sh
+   npm install
+   ```
+
+## Additional Information
+
+CORS Configuration: The application is configured to allow requests from http://localhost:3000 by default. You can modify the CORS policy in Startup.cs to suit your needs.
+Swagger Configuration: Swagger is configured in Startup.cs to provide API documentation. You can customize the Swagger setup as needed.
+
+## Assumptions
+
+- Added put endpoint for updating status
+- Assume the wait time for BE response is short enough since it is running locally - no loading effact
+- A network interceptor could have been added in Front End to add authentication header. It was not necessary in this case
