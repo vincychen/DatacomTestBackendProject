@@ -7,4 +7,9 @@ namespace DatacomTestProject.Models
         Offer,
         Rejected,
     }
+
+    public class UpdateApplicationStatusDto
+    {
+        public int status { get; set; }
+    }
 }
